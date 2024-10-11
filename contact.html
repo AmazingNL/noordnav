@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <section>
+        <section class="header"></section>
+            <nav class="nav">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="ferry.html">FERRY</a></A></li>
+                    <li><a href="bus.html">BUS</a></li>
+                    <li><a href="metro.html">METRO</a></li>
+                    <li><a href="tickets.html">TICKETS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h1>CONTACT US HERE</h1>
+            <p>For more information on how to get around Amsterdam Noord  or neighbouring towns around or how to get to other Province, you should fill the form bellow and we will contact you as soon as we get your information.
+                You can ask your question and we will contact you.</p>
+        </section>
+        
+        <section class="form">
+            <form action="https://coolinhollanddemo.azurewebsites.net/" method="post">
+                <h1>CONTACT FORM</h1>
+                <p>Note: The sections with “ * ” are compulsory .</p>
+                <input type="radio" id="mr" name="salutation" value="MR">
+                <label for="mr">MR</label>
+                <input type="radio" id="ms" name="salutation" value="MS">
+                <label for="ms">MS</label>
+                <label for="Name">*Name.</label>
+                <input type="text" id="name" name="Name">
+                <label for="email">*Email Address.</label>
+                <input type="email" id="email" name="email">
+                <label for="num">*Phone Number.</label>
+                <input type="text" id="num" name="num">
+                <label for="question">*Your Question.</label>
+                <input type="text" id="question" name="question">
+                <input type="button" onclick="alert('Submited')" value="SUBMIT">
+            </form>
+        </section>
+    </section>
+</body>
+</html>
