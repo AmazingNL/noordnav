@@ -2,98 +2,137 @@ html
 {
     color: black;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family: serif, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #a0d1ee;
-    margin: 0 10px;
-    line-height: 1.4;
+    background: #E7F6FE;
+    margin: 0;
+}
+
+.body {
+    margin: 0 2.5rem;
+    
 }
 
 footer {
-    background-color: white;
-    display: flex;
-    height: 100%;
+    margin-top: 6.25rem;
+    background-color: #011E2D;
+    display: inline-flex;
+    height: 6.25rem;
     justify-content: center;
 }
 
-.footer {
+footer .content {
     display: inline-flex;
     align-items: center;
 }
 
-.footer a{
-    color: blue;
+.content a{
+    color: #16ABF8;
+    font-family: Neuton;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
     text-decoration: none;
-    font-weight: bolder;
 }
 
-.footer a:hover{
+.content a:hover{
     color: red;
 }
 
-svg {
-    height: 50px;
-    width: 50px;
-    padding: 0 10px;
+footer svg {
+    margin: 1.25rem 0 0 0.625rem;
+    color:#16ABF8;
+    height: 2.5rem;
+    width: 2.5rem;
 }
-
 
 .wrapper{
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 0.313rem;
+}
+
+header {
+    width: 100%;
+    background-image: url("../pictures/Schalkx_NDSM-1.jpg");
+    background-color:lightgray;
+    margin: 0;
+    height: 18.75rem;
 }
 
 .nav ul{
     display: grid;
-    grid-gap: 20px;
     list-style: none; 
-    grid-template-columns: repeat(6, 1fr);
-    position: absolute;
-    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+}
+.nav svg{
+    position: fixed;
+    left: 0;
+    width: 11.25rem;
+    height: 5.625rem;
     top: 0;
-    z-index: 10;
+    border: 0.313rem;
+    border-radius: 0.625rem;
 }
 
 .nav a {
-    background: black;
+    background: #011E2D;
     display: block;
     text-decoration: none;
-    color: whitesmoke;
-    padding: 10px 25px;
+    padding: 0.625rem 1.563rem;
     text-transform: uppercase;
-    font-size: 1.1rem;
     position: fixed;
-
+    color: var(--Schemes-On-Primary, #FFF);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border: 0.313rem;
+    border-radius: 0.625rem;
 }
 
 .nav a:hover {
-    color: black;
+    color: #011E2D;
     background-color: whitesmoke;
-    padding: 10px 25px;
-}
-
-
-.header img{
-    width: 100%;
-    height: 400px;
-    top: 0;
+    padding: 0.625rem 1.563rem;
 }
 
 .welcome {
-    font-size: 24px;
+    letter-spacing: 0.031rem;  /* Adds 2px space between letters */
+    text-indent: 1.875rem;   /* Indents the first line by 30px */
+    word-spacing: 0.125rem;   /* Adds 5px of space between words */
     display: grid;
+    margin-top: 3.125rem;
+    width: auto;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Headline-Large-Line-Height, 40px); /* 152.555% */
 }
 
-.welcome h1 {
+h1, h2 {
+    color: #000;
+    font-family: Neuton;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
     position: relative;
     text-align: center;
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 .welcome a {
-    color: blue;
+    color: #16ABF8;
     text-decoration: none;
     font-weight: bolder;
 }
@@ -102,28 +141,60 @@ svg {
     color: red;
 }
 
-.picture-page {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 20px;
-    margin-left: 80px;
+.welcome a:active {
+    color: green;
 }
 
-.picture-page article{
+#first:first-letter{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.picture-page {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.picture-page article {
+    margin: 2.5rem ;
+}
+
+figure {
+    font-size: 0.938rem;
+    margin: 0;
 }
 
 .picture-page main{
-    justify-self: start;
-    width: 600px;
-
+    color: #000;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Headline-Large-Line-Height, 2.5rem);
 }
 
-
-#image {
-    height: 300px;
-    width: 600px;
+img {
+    height: 25.438rem;
+    width: 38.5rem;
 }
 
+.cookies-message {
+    position: fixed;          
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    z-index: 9999;             
+}
+
+.cookies-message button {
+    background-color: #fff;
+    color:#16ABF8;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
 

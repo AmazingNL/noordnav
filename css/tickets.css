@@ -3,123 +3,210 @@ html
     color: black;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 body {
-    background-color: #a0d1ee;
-    margin: 0 10px;
-    line-height: 1.4;
+    background: #E7F6FE;
+    margin: 0;
+}
+
+footer .content a{
+    color: #16ABF8;
+    font-family: Neuton;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
 }
 
 footer {
-    background-color: white;
+    background-color: #011E2D;
     display: flex;
-    height: 100%;
+    height: 6.25rem;
     justify-content: center;
 }
 
-.footer {
+footer .content {
     display: inline-flex;
     align-items: center;
 }
 
-svg {
-    height: 40px;
-    width: 40px;
-    padding: 0 10px;
+footer a:hover{
+    color: red;
+}
+
+footer svg {
+    margin: 1.25rem 0 0 0.625rem;
+    color:#16ABF8;
+    height: 2.5rem;
+    width: 2.5rem
 }
 
 .wrapper{
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 0.625rem;
+}
+
+header {
+    width: 100%;
+    background-image: url("../pictures/ticket.webp");
+    background-color:lightgray;
+    margin: 0;
+    height: 18.75rem;
 }
 
 .nav ul{
     display: grid;
-    grid-gap: 20px;
     list-style: none; 
-    grid-template-columns: repeat(6, 1fr);
-    position: absolute;
-    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.nav svg{
+    position: fixed;
+    left: 0;
+    width: 11.25rem;
+    height: 5.625rem;
     top: 0;
-    z-index: 10;
+    border: 0.313rem;
+    border-radius: 0.625rem;
 }
 
 .nav a {
-    background: black;
+    border-color: blue;
+    background: #011E2D;
     display: block;
     text-decoration: none;
-    color: whitesmoke;
-    padding: 10px 25px;
+    padding: 0.625rem 1.563rem;
     text-transform: uppercase;
-    font-size: 1.1rem;
     position: fixed;
-
+    color: var(--Schemes-On-Primary, #FFF);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border: 0.313rem;
+    border-radius: 0.625rem;
 }
 
 .nav a:hover {
-    color: black;
+    color: #011E2D;
     background-color: whitesmoke;
-    padding: 10px 25px;
-}
-
-.header img{
-    width: 100%;
-    height: 400px;
-    top: 0;
+    padding: 0.625rem 1.563rem;
 }
 
 .welcome {
-    font-size: 24px;
+    letter-spacing: 0.031rem;  /* Adds 2px space between letters */
+    text-indent: 1.875rem;   /* Indents the first line by 30px */
+    word-spacing: 0.125rem;   /* Adds 5px of space between words */
     display: grid;
+    margin-top: 3.125rem;
+    width: auto;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Headline-Large-Line-Height, 40px); /* 152.555% */
 }
 
-.welcome h1, h2{
+h1, h2 {
+    color: #000;
+    font-family: Neuton;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
     position: relative;
     text-align: center;
+    margin: 0;
+    font-size: 1.75rem;
 }
 
-.welcome a{
-    color: blue;
-    text-decoration: none;
-    font-weight: bolder; 
+h1 {
+    font-size: 2.5rem;
 }
 
-.welcome a:hover{
-    color: red;
+.content {
+    margin: 0 2.5rem;
+}
+
+.welcome {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Headline-Large-Line-Height, 40px); /* 152.555% */
 }
 
 .picture-page {
     display: grid;
-    font-size: 20px;
-}
-
-.picture-page article{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-bottom: 50px;
-}
-
-.picture-page main{
-    width: 600px;
-    margin-left: 30px;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Headline-Large-Line-Height, 2.5rem);
 }
 
 .picture-page a{
-    color: blue;
+    color: #16ABF8;
     text-decoration: none;
-    font-weight: bolder;  
+    font-weight: 700;
 }
 
 .picture-page a:hover{
     color: red;
 }
 
+.picture-page a:active {
+    color: green;
+}
 
+.tickets > figure {
+    float: left;
+}
+
+.tickets > main {
+    float: right;
+}
+
+figcaption {
+    position: relative;
+    left: 200px;
+    top: -20px;
+    font-size: 0.938rem;
+}
+
+img {
+    height: 25.438rem;
+    width: 38.5rem;
+}
 
 #image {
-    height: 400px;
-    width: 300px;
+    height: 40.438rem;
+    width: 30rem;
+    margin-left: 140px;
+
+}
+
+.cookies-message {
+    position: fixed;          
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    z-index: 9999;             
+}
+
+.cookies-message button {
+    background-color: #fff;
+    color:#16ABF8;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
 }
