@@ -255,6 +255,17 @@ legend {
         font-size: 1.6rem;
     }
 
+    img {
+        height: 16.438rem;
+        width: 25.5rem;
+    }
+
+    #image {
+        height: 30.438rem;
+        width: 18rem;
+        border-radius: 10px;
+    }
+
     .welcome {
         font-size: 1rem;
     }
@@ -271,132 +282,144 @@ legend {
 @media (max-width: 1024px) {
     .menu ul, .menu li {
         padding: 0;
-        margin: 15px;
+        margin: 20px 10px;
     }
     
     .menu a {
         padding: 0.400rem 0.800rem;
-        font-size: 1.2rem;
+        font-size: 0.900rem;
     }
 
-    #main-menu ul{
-        left: -40px;
+
+    img {
+        height: 14.438rem;
+        width: 100%;
     }
 
-    header img{
-        display: none;
+    #image {
+        height: 26.438rem;
+        width: 16rem;
+        border-radius: 10px;
     }
 
-    .container {
-        width: 500px;
-        height: 600px;
-        font-size: 1rem;
+    header img {
+        position: relative;
     }
 
-    .block input{
-        display: block;
-        margin-bottom: 15px;
-        height: 30px;
-        width: 450px;
-    }
 
-    #submit input {
-        width: 300px;
-        height: 50px;
-        margin-top: 50px;
-    }
 }
 
-@media (max-width: 768px) {
-    #drop-menu{
-        display: block;
+@media (max-width: 600px) {
+
+    .menu a {
+        font-size: 1rem;
     }
 
     #main-menu {
         display: none;
     }
 
-    .menu a {
-
-        font-size: 1rem;
+    #drop-menu{
+        position: absolute;
+        display: block;
+        left: 350px;
+        
     }
 
-    header img{
-        display: none;
-    }
-
-    .container {
-        width: 350px;
+    .container{
+        width: 400px;
         height: 500px;
         font-size: 0.700rem;
     }
 
     .block input{
-        height: 20px;
+        height: 25px;
         width: 300px;
     }
 
-    #question {
-        height: 80px;
+    #submit input{
+        width: 16.75rem;
+        height: 2.75rem;
+        margin-top: 20px;
     }
 
-    #submit input {
-        width: 200px;
-        height: 30px;
-        margin-top: 10px;
-        left: 5rem;
-        bottom: 0;
-    }
-
-    .titles {
-        margin-bottom: 15px;
+    header img {
+        width: 8.25rem;
+        height: 1.925rem;
+        top: 20px;
     }
 }
 
-
-@media (max-width: 425px) {
-    #drop-menu {
+@media (max-width: 500px) {
+    #drop-menu{
+        position: absolute;
         display: block;
+        left: 350px;
+        
     }
 
     #main-menu {
         display: none;
     }
 
-    .welcome {
+    .menu a {
         font-size: 1rem;
     }
-    
-    h1, h2 {
-        font-size: 1.5rem;
-    }
-    
-    h1 {
-        font-size: 2rem;
+
+    img {
+        height: 15.438rem;
+        width: 100%;
     }
 
     header img{
+        position: relative;
+        float: inline-start;
+        width: 8.25rem;
+        height: 1.925rem;
+        top: 10px;
+    }
+
+    .picture-page{
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    #drop-menu{
+        position: absolute;
+        display: block;
+        left: 350px;
+        
+    }
+
+    #main-menu {
         display: none;
     }
 
-    .container {
-        width: 300px;
-        height: 700px;
-        font-size: 1.65;
+    .menu a {
+        font-size: 1rem;
     }
 
-    .block input{
-        height: 40px;
-        width: 400px;
+    img {
+        height: 15.438rem;
+        width: 100%;
     }
 
-    #submit input {
-        width: 500px;
-        height: 60px;
-        margin-top: 10px;
+    #image {
+        height: 26.438rem;
+        width: 16rem;
+        border-radius: 10px;
     }
 
-    .titles {
-        margin-bottom: 15px;
+    header img{
+        position: relative;
+        float: inline-start;
+        width: 8.25rem;
+        height: 1.925rem;
+        top: 10px;
+    }
+
+    .picture-page{
+        display: block;
     }
 }

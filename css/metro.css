@@ -280,31 +280,66 @@ img {
 @media (max-width: 1024px) {
     .menu ul, .menu li {
         padding: 0;
-        margin: 15px;
+        margin: 20px 10px;
     }
     
     .menu a {
         padding: 0.400rem 0.800rem;
-        font-size: 1.2rem;
+        font-size: 0.900rem;
     }
 
-    #main-menu ul{
-        left: -40px;
-    }
-
-    header img{
-        display: none;
-    }
 
     img {
         height: 14.438rem;
-        width: 18.5rem;
+        width: 100%;
+    }
+
+    header img {
+        position: relative;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    .menu a {
+        font-size: 1rem;
+    }
+
+    #main-menu {
+        display: none;
+    }
+
+    #drop-menu{
+        position: absolute;
+        display: block;
+        left: 350px;
+        
+    }
+
+    img {
+        height: 15.438rem;
+        width: 100%;
+    }
+
+    .picture-page{
+        display: block;
+    }
+
+    header img {
+        width: 8.25rem;
+        height: 1.925rem;
+        top: 20px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     #drop-menu{
+        position: absolute;
         display: block;
+        left: 350px;
+        
     }
 
     #main-menu {
@@ -312,17 +347,20 @@ img {
     }
 
     .menu a {
-
         font-size: 1rem;
     }
 
     img {
         height: 15.438rem;
-        width: 20.5rem;
+        width: 100%;
     }
 
     header img{
-        display: none;
+        position: relative;
+        float: inline-start;
+        width: 8.25rem;
+        height: 1.925rem;
+        top: 10px;
     }
 
     .picture-page{
@@ -330,35 +368,33 @@ img {
     }
 }
 
-
-@media (max-width: 425px) {
-    #drop-menu {
+@media (max-width: 500px) {
+    #drop-menu{
+        position: absolute;
         display: block;
+        left: 350px;
+        
     }
 
     #main-menu {
         display: none;
     }
 
-    img {
-        height: 15.438rem;
-        width: 20.5rem;
-    }
-
-    .welcome {
+    .menu a {
         font-size: 1rem;
     }
-    
-    h1, h2 {
-        font-size: 1.5rem;
-    }
-    
-    h1 {
-        font-size: 2rem;
+
+    img {
+        height: 15.438rem;
+        width: 100%;
     }
 
     header img{
-        display: none;
+        position: relative;
+        float: inline-start;
+        width: 8.25rem;
+        height: 1.925rem;
+        top: 10px;
     }
 
     .picture-page{
