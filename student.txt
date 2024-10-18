@@ -6,4 +6,4 @@ o Student class: IT1B
 
 o GitHub Repository: https://github.com/AmazingNL?tab=repositories
 
-o GitHub Pages URL: your github pages URL*
+o GitHub Pages URL: https://github.com/AmazingNL/noordnav/tree/main
