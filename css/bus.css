@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
 html
 {
     color: black;
@@ -37,13 +41,6 @@ footer a:hover{
     color: red;
 }
 
-footer svg {
-    margin: 1.25rem 0 0 0.625rem;
-    color:#16ABF8;
-    height: 2.5rem;
-    width: 2.5rem
-}
-
 .wrapper{
     display: grid;
     grid-gap: 0.625rem;
@@ -57,7 +54,7 @@ header {
     height: 18.75rem;
 }
 
-header svg{
+header img{
     position: fixed;
     left: 0;
     width: 11.25rem;
@@ -223,6 +220,7 @@ figcaption {
 img {
     height: 25.438rem;
     width: 38.5rem;
+    border-radius: 10px;
 }
 
 .cookies-message {
@@ -291,17 +289,13 @@ img {
         left: -40px;
     }
 
-    header svg {
+    header img {
         display: none;
     }
 
     img {
         height: 14.438rem;
         width: 18.5rem;
-    }
-
-    .nav svg{
-        display: none;
     }
 }
 
@@ -326,7 +320,7 @@ img {
         width: 20.5rem;
     }
 
-    header svg{
+    header img{
         display: none;
     }
 
@@ -363,7 +357,7 @@ img {
         font-size: 2rem;
     }
 
-    header svg{
+    header img{
         display: none;
     }
 

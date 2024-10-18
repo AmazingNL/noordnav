@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 html
 {
     color: black;
@@ -37,13 +40,6 @@ footer a:hover{
     color: red;
 }
 
-footer svg {
-    margin: 1.25rem 0 0 0.625rem;
-    color:#16ABF8;
-    height: 2.5rem;
-    width: 2.5rem
-}
-
 .wrapper{
     display: grid;
     grid-gap: 0.625rem;
@@ -54,7 +50,7 @@ header {
     margin-bottom: 20px;
 }
 
-header svg{
+header img{
     position: fixed;
     left: 0;
     width: 11.25rem;
@@ -153,7 +149,7 @@ li:hover ul#submenu {
     line-height: var(--Headline-Large-Line-Height, 40px); /* 152.555% */
 }
 
-h1, h2 {
+h1 {
     color: var(--Schemes-On-Primary, #FFF);
     font-family: Neuton;
     font-style: normal;
@@ -179,22 +175,32 @@ h1 {
 .container {
     color: var(--Schemes-On-Primary, #FFF);
     font-family: Inter;
-    font-size: 1.65rem;
+    font-size: 0.900rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 150%; /* 54px */
-    width: 700px;
-    height: 900px;
+    width: 500px;
+    height: 550px;
     background-color: #000;
-    border: 20px solid #16ABF8;
-    
+    border: 5px solid #16ABF8;
+}
+
+legend {
+    display: block;
+    background-color:#16ABF8;
+    color: white;
+    text-align: center;
 }
 
 .block input{
     display: block;
     margin-bottom: 15px;
-    height: 40px;
-    width: 600px;
+    height: 30px;
+    width: 400px;
+}
+
+#question {
+    height: 90px;
 }
 
 #submit input {
@@ -202,15 +208,16 @@ h1 {
     background: #011E2D;
     color: #16ABF8;
     font-family: Neuton;
-    font-size: 32px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: 100%; /* 48px */
-    letter-spacing: 1.35rem;
-    width: 43.75rem;
-    height: 3.75rem;
+    letter-spacing: 0.5rem;
+    width: 20.75rem;
+    height: 2.75rem;
     margin-top: 10px;
-    
+    position: relative;
+    left: 5rem;
 }
 
 .titles {
@@ -276,30 +283,28 @@ h1 {
         left: -40px;
     }
 
-    header svg {
+    header img{
         display: none;
     }
 
     .container {
-        width: 600px;
-        height: 700px;
+        width: 500px;
+        height: 600px;
         font-size: 1rem;
     }
 
     .block input{
         display: block;
         margin-bottom: 15px;
-        height: 40px;
-        width: 500px;
+        height: 30px;
+        width: 450px;
     }
 
     #submit input {
-        width: 600px;
-        height: 60px;
-        margin-top: 10px;
-        
+        width: 300px;
+        height: 50px;
+        margin-top: 50px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -316,25 +321,31 @@ h1 {
         font-size: 1rem;
     }
 
-    header svg{
+    header img{
         display: none;
     }
 
     .container {
-        width: 400px;
-        height: 700px;
+        width: 350px;
+        height: 500px;
         font-size: 0.700rem;
     }
 
     .block input{
-        height: 40px;
+        height: 20px;
         width: 300px;
     }
 
+    #question {
+        height: 80px;
+    }
+
     #submit input {
-        width: 400px;
-        height: 60px;
+        width: 200px;
+        height: 30px;
         margin-top: 10px;
+        left: 5rem;
+        bottom: 0;
     }
 
     .titles {
@@ -364,7 +375,7 @@ h1 {
         font-size: 2rem;
     }
 
-    header svg{
+    header img{
         display: none;
     }
 
