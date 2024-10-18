@@ -57,12 +57,7 @@ header {
     height: 18.75rem;
 }
 
-.nav ul{
-    display: grid;
-    list-style: none; 
-    grid-template-columns: repeat(7, 1fr);
-}
-.nav svg{
+header svg{
     position: fixed;
     left: 0;
     width: 11.25rem;
@@ -72,14 +67,30 @@ header {
     border-radius: 0.625rem;
 }
 
-.nav a {
-    border-color: blue;
-    background: #011E2D;
-    display: block;
-    text-decoration: none;
-    padding: 0.625rem 1.563rem;
-    text-transform: uppercase;
+.menu ul, .menu li {
+    padding: 0;
+    margin: 20px;
+}
+
+.menu ul {
+    background: transparent;
+    list-style: none;
+    width: 100%;
     position: fixed;
+    top: -15px;
+}
+
+#main-menu li {
+    position: relative;
+    float: right;
+    width: auto;
+}
+
+.menu a {
+    background: #011E2D;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.625rem 1.563rem;
     color: var(--Schemes-On-Primary, #FFF);
     font-family: Inter;
     font-size: 2rem;
@@ -88,12 +99,45 @@ header {
     line-height: normal;
     border: 0.313rem;
     border-radius: 0.625rem;
+    transition: all 1s ease;
 }
 
-.nav a:hover {
+.menu li:hover a{
     color: #011E2D;
     background-color: whitesmoke;
-    padding: 0.625rem 1.563rem;
+}
+
+#submenu {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul#submenu {
+    opacity: 1;
+    top: 20px;
+    visibility: visible;
+}
+
+#submenu li {
+    float: none;
+    width: 100%;
+}
+
+#submenu a:hover {
+    color: #011E2D;
+    background-color: whitesmoke;
+}
+
+#submenu a {
+    color: var(--Schemes-On-Primary, #FFF);
+    background: #011E2D;
+}
+
+#drop-menu {
+    display: none;
 }
 
 .welcome {
@@ -173,9 +217,6 @@ h1 {
 }
 
 figcaption {
-    position: relative;
-    left: 300px;
-    top: -20px;
     font-size: 0.938rem;
 }
 
@@ -202,4 +243,130 @@ img {
     border: none;
     padding: 8px 15px;
     cursor: pointer;
+}
+
+
+@media (max-width: 1280px) { 
+    .menu ul, .menu li {
+        padding: 0;
+        margin: 20px;
+    }
+    
+    .menu a {
+        padding: 0.400rem 0.800rem;
+        font-size: 1.6rem;
+    }
+
+    img {
+        height: 16.438rem;
+        width: 25.5rem;
+    }
+
+    .welcome {
+        font-size: 1rem;
+    }
+    
+    h1, h2 {
+        font-size: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu ul, .menu li {
+        padding: 0;
+        margin: 15px;
+    }
+    
+    .menu a {
+        padding: 0.400rem 0.800rem;
+        font-size: 1.2rem;
+    }
+
+    #main-menu ul{
+        left: -40px;
+    }
+
+    header svg {
+        display: none;
+    }
+
+    img {
+        height: 14.438rem;
+        width: 18.5rem;
+    }
+
+    .nav svg{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #drop-menu{
+        display: block;
+    }
+
+
+
+    #main-menu {
+        display: none;
+    }
+
+    .menu a {
+
+        font-size: 1rem;
+    }
+
+    img {
+        height: 15.438rem;
+        width: 20.5rem;
+    }
+
+    header svg{
+        display: none;
+    }
+
+    .picture-page{
+        display: block;
+    }
+}
+
+
+@media (max-width: 425px) {
+    #drop-menu {
+        display: block;
+    }
+
+    #main-menu {
+        display: none;
+    }
+
+
+    img {
+        height: 15.438rem;
+        width: 20.5rem;
+    }
+
+    .welcome {
+        font-size: 1rem;
+    }
+    
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+    header svg{
+        display: none;
+    }
+
+    .picture-page{
+        display: block;
+    }
 }
