@@ -31,6 +31,11 @@ footer .content {
     align-items: center;
 }
 
+.content h2 {
+    color: #E7F6FE;
+    margin-right: 20px;
+}
+
 .content a{
     color: #16ABF8;
     font-family: Neuton;
@@ -92,7 +97,7 @@ header img{
     text-decoration: none;
     text-align: center;
     padding: 0.625rem 1.563rem;
-    color: var(--Schemes-On-Primary, #FFF);
+    color:#E7F6FE;
     font-family: Inter;
     font-size: 2rem;
     font-style: normal;
@@ -196,7 +201,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.picture-page article {
+.article {
     margin: 2.5rem ;
 }
 
@@ -205,7 +210,7 @@ figure {
     margin: 0;
 }
 
-.picture-page main{
+.main{
     color: #000;
     font-family: Inter;
     font-size: 1.25rem;

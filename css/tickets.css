@@ -36,6 +36,11 @@ footer .content {
     align-items: center;
 }
 
+footer .content h2 {
+    color: #E7F6FE;
+    margin-right: 20px;
+}
+
 footer a:hover{
     color: red;
 }
@@ -87,7 +92,7 @@ header img{
     text-decoration: none;
     text-align: center;
     padding: 0.625rem 1.563rem;
-    color: var(--Schemes-On-Primary, #FFF);
+    color:#E7F6FE;
     font-family: Inter;
     font-size: 2rem;
     font-style: normal;
@@ -231,7 +236,7 @@ img {
 .cookies-message {
     position: fixed;          
     bottom: 0;
-    left: 0;
+    height: 20px;
     right: 0;
     background-color: #333;
     color: #fff;
