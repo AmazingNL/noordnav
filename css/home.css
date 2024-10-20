@@ -36,7 +36,7 @@ footer .content {
     margin-right: 20px;
 }
 
-.content a{
+.content a {
     color: #16ABF8;
     font-family: Neuton;
     font-size: 3rem;
@@ -46,7 +46,7 @@ footer .content {
     text-decoration: none;
 }
 
-.content a:hover{
+content a:hover{
     color: red;
 }
 
@@ -177,17 +177,19 @@ h1 {
     font-size: 2.5rem;
 }
 
-.welcome a {
+
+
+a {
     color: #16ABF8;
     text-decoration: none;
     font-weight: bolder;
 }
 
-.welcome a:hover {
+a:hover {
     color: red;
 }
 
-.welcome a:active {
+a:active {
     color: green;
 }
 
